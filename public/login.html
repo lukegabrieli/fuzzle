@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Fuzzle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <header>
+      <section class="main_logo">
+        <img src="">
+        <h1>Fuzzle</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>People</li>
+          <li>Map</li>
+          <li>About</li>
+          <li>Sign In</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+       <article class="page_header">
+        <h2>Sign-In</h2>
+        <p>Log in and find your next hitting-partner.</p>
+        <p>Or</p>
+        <p>Create an account
+      </article>
+        <form id="login-form" role="subscribe form">
+          <fieldset>
+            <label for="name">Email</label>
+            <input aria-label="Account Name" name="name" id="account_name" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
+            <label for="password">Password</label>
+            <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <button id="login">Login</button>
+          </fieldset>
+          <p><strong class="create-account" id="create">Create an account</strong></p>
+          <fieldset id="create_account_form">
+            <label for="name">Your Name</label>
+            <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="your name" required/>
+            <label for="email">Email</label>
+            <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
+            <label for="password">Password</label>
+            <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <label for="password">Confirm Password</label>
+            <input aria-label="Confirm Password" name="password" id="Password" type="text" value="" placeholder="confirm password" required/>
+            <label for="location">Location</label>
+            <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="4718 11th Ave NE" required/>
+            <label for="skill-level">Skill Level</label>
+            <select id="product" required>
+              <option disabled selected> -- select skill level -- </option>
+              <option value="1.0 -- Novice">1.0 -- Novice</option>
+              <option value="1.5">1.5</option>
+              <option value="2.0 -- Beginner">2.0 -- Beginner</option>
+              <option value="2.5">2.5</option>
+              <option value="3.0 -- Intermediate">3.0 -- Intermediate</option>
+              <option value="3.5">3.5</option>
+              <option value="4.0 -- Advanced">4.0 -- Advanced</option>
+              <option value="4.5">4.5</option>
+              <option value="5.0 -- Expert">5.0 -- Expert</option>
+              <option value="5.5">5.5</option>
+              <option value="6.0 -- Pro">6.0 -- Pro</option>
+              <option value="7.0 -- World-Class">7.0 -- World-Class</option>
+            </select>
+            <label for="gender">Optional: Gender</label>
+            <select id="gender">
+              <option disabled selected> -- gender -- </option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <button id="join">Join</button>
+          </fieldset>
+          </fieldset>
+        </form>
+    </main>
+
+    <footer>
+      <p>Copyright 2015.</p>
+      <a href="https://github.com/truyennguyen/fuzzle" target="_blank">GitHub Link</a>
+    </footer>
+
+  </body>
+</html>
