@@ -15,7 +15,7 @@ header {
 
 }
 
-/* ---HOME PAGE--- */
+/* ---HOME--- */
 
 .home_article {
   text-align: center;
@@ -24,6 +24,19 @@ header {
 
 .bit-3 {
   border: 1px solid red;
+}
+
+/* ---PEOPLE--- */
+
+.bit-4 {
+  border: 1px solid red;
+}
+
+/* ---ABOUT--- */
+
+.about_article {
+  text-align: center;
+  border: 1px solid blue;
 }
 
 /* ---FOOTER--- */
