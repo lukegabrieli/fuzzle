@@ -38,16 +38,18 @@
             <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
             <button id="login">Login</button>
           </fieldset>
-          <p><strong class="create-account" id="create">Create an account</strong></p>
+        </form>
+        <p><strong class="create-account" id="create">Create an account</strong></p>
+        <form id="create-account-form">
           <fieldset id="create_account_form">
             <label for="name">Your Name</label>
             <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="your name" required/>
             <label for="email">Email</label>
             <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
             <label for="password">Password</label>
-            <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <input aria-label="Password" name="password" id="password" type="password" value="" placeholder="password" required/>
             <label for="password">Confirm Password</label>
-            <input aria-label="Confirm Password" name="password" id="Password" type="text" value="" placeholder="confirm password" required/>
+            <input aria-label="Confirm Password" name="password" id="Password" type="password" value="" placeholder="confirm password" required/>
             <label for="location">Location</label>
             <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="4718 11th Ave NE" required/>
             <label for="skill-level">Skill Level</label>
@@ -74,7 +76,6 @@
             </select>
             <button id="join">Join</button>
           </fieldset>
-          </fieldset>
         </form>
     </main>
 
@@ -84,4 +85,6 @@
     </footer>
 
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/login.js"></script>
 </html>
