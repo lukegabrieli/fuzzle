@@ -9,7 +9,11 @@ var userSchema = mongoose.Schema({
   basic: {
     email: { type: String, unique: true},
     password: String
-  }
+  },
+  name: String,
+  location: String,
+  gender: String,
+  usta: Number
 });
 
 userSchema.methods.generateHash = function(password) {
