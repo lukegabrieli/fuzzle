@@ -12,6 +12,8 @@ mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/tennis');
 
 app.use(passport.initialize());
 
+app.use(express.static(__dirname + '/public'));
+
 require('./lib/passport_strat')(passport);
 require('./routes/tennis_apis')(tennisRoutes);
 require('./routes/auth_routes')(userRoutes, passport);
