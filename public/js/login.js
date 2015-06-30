@@ -1,31 +1,72 @@
 $(function() {
 
-  var userName;
-  var userList = [];
-
-  var User = function(name) {
-    this.name = userName;
-    this.email = email;
-    this.password = password;
-    this.neighborhood = neighborhood;
-    this.skillLevel = skillLevel;
-    this.gender = gender;
+  var User = function(name, options) {
+    this.name = name;
+    this.email = options.email;
+    this.password = options.password;
+    this.neighborhood = options.neighborhood;
+    this.skillLevel = options.skillLevel;
+    this.gender = options.gender;
   };
+
+  $('#login-form').submit(function(e) {
+    e.preventDefault();
+
+    var fuzzleHeadLogin = new User(name, {
+      email : $('#login-email').val(),
+      password : $('#login-password').val(),
+    });
+
+    var filterData = ["email", "password"];
+
+    var fuzzleUserLogin = JSON.stringify(fuzzleHead, filterData);
+
+    console.log(fuzzleUser);
+
+    $.ajax({
+      type: "POST",
+      url: "localhost:3000/api/sign_in",
+      timeout: 2500,
+      data: fuzzleUserLogin,
+      datatype: 'json',
+      success: function() {
+        console.log('its a match');
+      },
+      error: function() {
+        console.log('something is wrong');
+      }
+    });
+  });
 
   $('#create-account-form').submit(function(e) {
     e.preventDefault();
-    userName = $('#name').val();
-    email =$('#email').val();
-    password = $('#password').val();
-    neighborhood = $('#location').val();
-    skillLevel = $('#skill-level').val();
-    gender = $('#gender').val();
 
-    userList.push(new User(userName));
+    var fuzzleHead = new User($('#name').val(), {
+      email : $('#email').val(),
+      password : $('#password').val(),
+      neighborhood : $('#location').val(),
+      skillLevel : $('#skill-level').val(),
+      gender : $('#gender').val()
+    });
 
-    console.log(userList);
+    var fuzzleUser = JSON.stringify(fuzzleHead);
+
+    console.log(fuzzleUser);
+
+    $.ajax({
+      type: "POST",
+      url: "localhost:3000/api/create_user",
+      timeout: 2500,
+      data: fuzzleUser,
+      datatype: 'json',
+      success: function() {
+        $('#login_article').append('<p>Congratulations you are now on fuzzle!</p>');
+        console.log('success');
+      },
+      error: function() {
+        console.log('sucks dude');
+      }
+    });
   });
 
 });
-
-
