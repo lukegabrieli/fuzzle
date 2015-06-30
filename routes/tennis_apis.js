@@ -1,7 +1,7 @@
 'use strict';
 var bodyparser = require('body-parser');
-var http = require('http');
 var request = require('request');
+var eatAuth = require('../lib/eat_auth')(process.env.APP_SECRET);
 
 module.exports = function (router) {
   router.use(bodyparser.json());
