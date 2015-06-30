@@ -15,7 +15,8 @@ $(function() {
 
   $.ajax({
     type: "GET",
-    url:  "https://data.seattle.gov/resource/7stk-8j8w.json",
+    //url:  "https://data.seattle.gov/resource/7stk-8j8w.json",
+    url:  "http://localhost:3000/api/tennis/getCourt",
     dataType: 'json',
     success: function compile (data) {
       for(var i = 0; i < data.length; i++) {
