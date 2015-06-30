@@ -1,12 +1,23 @@
-var express = require('express');
-var app = express();
 var mongoose = require('mongoose');
+var express = require('express');
+var passport = require('passport');
+var app = express();
+
+process.env.APP_SECRET = process.env.APP_SECRET || 'tennis';
 
 var tennisRoutes = express.Router();
-require('./routes/tennis_apis')(tennisRoutes);
-app.use('/api', tennisRoutes);
+var userRoutes = express.Router();
 
-//mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/tennis');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/tennis');
+
+app.use(passport.initialize());
+
+require('./lib/passport_strat')(passport);
+require('./routes/tennis_apis')(tennisRoutes);
+require('./routes/auth_routes')(userRoutes, passport);
+
+app.use('/api', tennisRoutes);
+app.use('/api', userRoutes);
 
 app.listen(process.env.PORT || 3000, function(){
 	console.log('Server running on port ' + (process.env.PORT || 3000));

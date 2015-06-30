@@ -1,12 +1,13 @@
 'use strict';
 var bodyparser = require('body-parser');
-var http = require('http');
+//var http = require('http');
 var request = require('request');
+var eatAuth = require('../lib/eat_auth')(process.env.APP_SECRET);
 
 module.exports = function (router) {
   router.use(bodyparser.json());
 
-  router.get('/tennis/getCourt', function(req, res) {
+  router.get('/tennis/getCourt', eatAuth, function(req, res) {
     request({
       url: 'https://data.seattle.gov/resource/7stk-8j8w.json',
       method: 'GET'}, function(err, response, body) {
