@@ -8,62 +8,69 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/states.css">
   </head>
   <body>
 
     <header>
       <section class="main_logo">
         <a href="index.html">
-          <img src="http://images.vectorhq.com/images/previews/0fb/tennis-ball-psd-458123.png" class="main_logo_image">
+          <img src="images/ball-icon.png" class="main_logo_image">
           <h1 class="main_logo_text">Fuzzle</h1>
         </a>
       </section>
       <div class="icon-menu"></div>
       <nav class="main_nav">
         <ul>
-          <li><a href="people.html">People</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="login.html">Sign In</a></li>
+          <a href="people.html"><li class="main_nav_item">Players</li></a>
+          <a href="map.html"><li class="main_nav_item">Courts</li></a>
+          <a href="about.html"><li class="main_nav_item">About</li></a>
+          <a href="login.html"><li class="main_nav_item last">Sign In</li></a>
         </ul>
       </nav>
     </header>
 
     <main class="frame">
-      <article class="home_article bit-1">
+      <article class="home_article article_one bit-1">
         <h1>Welcome</h1>
         <p>Fuzzle is a platform that allows you to connect with other tennis enthusiasts in the greater Seattle area. You can look up courts, find people who are ready to play, and contact them to meet up.</p>
         <a href="">Log In</a>
       </article>
 
-      <article class="home_article bit-1">
-        <h1>People</h1>
-        <section class="home_player_card bit-3">
-          <h2>Name: Luke</h2>
-          <p>Location: Capitol Hill</p>
-          <p>Gender: Male</p>
-          <p>Skill Level: 7</p>
+      <article class="home_article article_two bit-1">
+        <h1>Players</h1>
+        <section class="bit-1 article_two_cards">
+          <section class="bit-3">
+            <section class="home_player_card">
+              <h2>Name: <span class="bold">Luke</span></h2>
+              <p>Location: <span class="bold">Capitol Hill</span></p>
+              <p>Gender: <span class="bold">Male</span></p>
+              <p>Skill Level: <span class="bold">7</span></p>
+            </section>
+          </section>
+          <section class="bit-3">
+            <section class="home_player_card">
+              <h2>Name: <span class="bold">Philip</span></h2>
+              <p>Location: <span class="bold">University District</span></p>
+              <p>Gender: <span class="bold">Male</span></p>
+              <p>Skill Level: <span class="bold">3</span></p>
+            </section>
+          </section>
+          <section class="bit-3">
+            <section class="home_player_card">
+              <h2>Name: <span class="bold">Truyen</span></h2>
+              <p>Location: <span class="bold">Snohomish</span></p>
+              <p>Gender: <span class="bold">Male</span></p>
+              <p>Skill Level: <span class="bold">6</span></p>
+            </section>
+          </section>
         </section>
-        <section class="home_player_card bit-3">
-          <h2>Name: Philip</h2>
-          <p>Location: University District</p>
-          <p>Gender: Male</p>
-          <p>Skill Level: 3</p>
-        </section>
-        <section class="home_player_card bit-3">
-          <h2>Name: Truyen</h2>
-          <p>Location: Snohomish</p>
-          <p>Gender: Male</p>
-          <p>Skill Level: 6</p>
-        </section>
-        <a href="">Find a Partner</a>
+        <a href="">Find More Players</a>
       </article>
 
-      <article class="home_article bit-1">
+      <article class="home_article article_three bit-1">
         <h1>Courts</h1>
-        <section>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.131589453141!2d-122.3360688!3d47.6235733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153758c88a61%3A0xe3d3fd29c55db518!2sCode+Fellows!5e0!3m2!1sen!2sus!4v1435601941434" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.131589453141!2d-122.3360688!3d47.6235733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153758c88a61%3A0xe3d3fd29c55db518!2sCode+Fellows!5e0!3m2!1sen!2sus!4v1435601941434" frameborder="0" style="border:0" allowfullscreen></iframe>
         <a href="">Find a Court</a>
       </article>
     </main>

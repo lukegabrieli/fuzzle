@@ -3,27 +3,117 @@
 /* ---HEADER--- */
 
 header {
-  background-color: grey;
+  background-color: #61BC84;
 }
 
 .main_logo_image {
-  width: 4em;
-  height: 4em;
+  height: 3em;
+}
+
+.main_logo_text {
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Mensch Bold", sans-serif;
+  transition: color .2s linear;
+}
+
+.icon-menu, .icon-cross {
+  color: white;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+.main_nav ul a {
+  font-family: "Mensch", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.main_nav_item {
+  border-bottom: 1px solid white;
+  transition: background-color .2s linear;
+}
+
+.last {
+  border-bottom: none;
 }
 
 @media (min-width: 50em) {
-
+  .main_nav_item {
+    border-bottom: none;
+    border-radius: .5em;
+  }
 }
 
 /* ---HOME--- */
 
+
+/*-all articles-*/
 .home_article {
   text-align: center;
-  border: 1px solid blue;
+  font-family: "Mensch", sans-serif;
 }
 
-.bit-3 {
-  border: 1px solid red;
+.home_article h1 {
+  font-size: 3em;
+}
+
+.home_article a {
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: background-color .2s linear, color .2s linear, border .2s linear;
+}
+
+/*-welcome article-*/
+
+.article_one {
+  background: url(../images/court1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.article_one a {
+  color: white;
+  border: 1px solid white;
+}
+
+.article_one p {
+  font-size: 1.5em;
+}
+
+/*-players article-*/
+
+.article_two {
+  background-color: #e5f3ea;
+}
+
+.home_player_card {
+  background-color: #BC6661;
+  border-radius: .8em;
+  text-align: left;
+  color: white;
+  font-size: 1.2em;
+}
+
+.bold {
+  font-family: "Mensch Bold", sans-serif;
+}
+
+.article_two a {
+  color: black;
+  border: 1px solid black;
+}
+
+/*-courts article-*/
+
+.article_three a {
+  color: black;
+  border: 1px solid black;
 }
 
 /* ---PEOPLE--- */
@@ -42,6 +132,6 @@ header {
 /* ---FOOTER--- */
 
 footer {
-  background-color: grey;
+  background-color: #61BC84;
   text-align: center;
 }
