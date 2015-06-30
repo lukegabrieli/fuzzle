@@ -47,7 +47,7 @@ $(function() {
             '<h3 id="firstHeading" class="firstHeading">' + tennisCourts[i].name + '</h3>'+
             '<p>' + tennisCourts[i].address + '</p>' +
             '<p><strong>More Info:</strong></p> ' +
-            '<p><a href="' + tennisCourts[i].website + '">Court Website</a></p>' +
+            '<p><a href="' + tennisCourts[i].website + '" target="_blank">Court Website</a></p>' +
             '</div>']);
         }
       }
