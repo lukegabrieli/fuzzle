@@ -13,7 +13,7 @@ var userSchema = mongoose.Schema({
   name: String,
   location: String,
   gender: String,
-  usta: Number
+  skill_level: Number
 });
 
 userSchema.methods.generateHash = function(password) {
