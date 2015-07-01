@@ -14,8 +14,9 @@
 
 @media (min-width: 50em) {
   .main_nav_item:hover {
-    background-color: #BC6661;
+    background-color: #61BC84;
     border-radius: .5em;
+    box-shadow: 0px 0px 5px 1px #BC6661;
   }
 }
 
@@ -24,6 +25,12 @@
 }
 
 .article_two a:hover, .article_three a:hover {
+  background-color: #BC6661;
+  color: white;
+  border: 1px solid #BC6661;
+}
+
+.about_article > a:hover {
   background-color: #BC6661;
   color: white;
   border: 1px solid #BC6661;
