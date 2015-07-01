@@ -25,11 +25,11 @@ module.exports = function (router) {
   router.get('/tennis/getUsers', function(req, res){
     User.find({}, function(err, data){
       if(err){
-				console.log(err);
-				return res.status(500).json({msg: 'internal server error'});
-			}
+        console.log(err);
+        return res.status(500).json({msg: 'internal server error'});
+      }
 
-			res.json(data);
+      res.json(data);
     });
   });
 };
