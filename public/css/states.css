@@ -29,6 +29,12 @@
   border: 1px solid #BC6661;
 }
 
+.about_article > a:hover {
+  background-color: #BC6661;
+  color: white;
+  border: 1px solid #BC6661;
+}
+
 footer a:hover {
   color: #BC6661;
 }
