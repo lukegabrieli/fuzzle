@@ -1,0 +1,25 @@
+.main_nav_item:hover {
+  background-color: #BC6661;
+  border-radius: 0;
+}
+
+.main_logo_text:hover {
+  color: #BC6661;
+}
+
+@media (min-width: 50em) {
+  .main_nav_item:hover {
+    background-color: #BC6661;
+    border-radius: .5em;
+  }
+}
+
+.article_one a:hover {
+  background-color: #BC6661;
+}
+
+.article_two a:hover, .article_three a:hover {
+  background-color: #BC6661;
+  color: white;
+  border: 1px solid #BC6661;
+}

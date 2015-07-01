@@ -128,21 +128,30 @@
 
 /* ---HEADER--- */
 
-.main_logo {
-  padding: 1em;
+.main_logo_image {
+  float: left;
+  margin: 1.9em .6em 1em .5em;
 }
 
 .main_logo_text {
+  position: relative;
   display: inline-block;
+  margin: .6em 0 .5em 0;
+  padding-top: .2em;
 }
 
 .icon-menu, .icon-cross {
   float: right;
-  margin: -3.5em 1em 0 0;
+  margin: -1.85em .5em 0 0;
 }
 
 .main_nav {
   display: none;
+  margin: 0 1em;
+}
+
+.main_nav_item {
+  padding: 1em 0 .8em 1em;
 }
 
 @media (min-width: 50em) {
@@ -151,20 +160,58 @@
   }
 
   .main_nav {
-    display: inline-block;
+    display: inline-block !important;
     float: right;
-    margin: -3em 1em 0 0;
+    margin-top: -4.5em;
   }
 
-  .main_nav ul li {
+  .main_nav_item {
     display: inline-block;
+    margin: 0 .5em;
+    padding: .7em .7em .5em .7em;
   }
 }
 
 /* ---HOME--- */
 
+/*-all article-*/
+
 .home_article {
-  padding: 10em 0;
+  padding: 7em 0;
+}
+
+.home_article a {
+  padding: .7em .7em .5em .7em;
+}
+
+/*-welcome article-*/
+
+.article_one p {
+  width: 80%;
+  margin: 0 auto;
+  margin: 2em auto 3em auto;
+}
+
+/*-players article-*/
+
+.article_two_cards {
+  margin: 2em auto 4em auto;
+}
+
+.home_player_card {
+  padding: 1.3em 1em 1.1em 1em;
+}
+
+.home_player_card p {
+  margin-top: .5em;
+}
+
+/*-courts article-*/
+
+iframe {
+  width: 100%;
+  height: 20em;
+  margin: 2em auto 4em auto;
 }
 
 /* ---ABOUT--- */
