@@ -39,3 +39,9 @@
 footer a:hover {
   color: #BC6661;
 }
+
+.map_marker a:hover {
+  background-color: #BC6661;
+  color: white;
+  border: 1px solid #BC6661;
+}
