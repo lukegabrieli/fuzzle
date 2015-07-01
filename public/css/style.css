@@ -29,7 +29,6 @@ header {
 }
 
 .main_nav ul a {
-  font-family: "Mensch", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 1.2em;
@@ -57,7 +56,6 @@ header {
 /*-all articles-*/
 .home_article {
   text-align: center;
-  font-family: "Mensch", sans-serif;
 }
 
 .home_article h1 {
@@ -72,7 +70,7 @@ header {
 
 /*-welcome article-*/
 
-.article_one, .article_three {
+.article_one {
   background: url(../images/court1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -81,9 +79,21 @@ header {
   color: white;
 }
 
+.article_three {
+  background: url(../images/court2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
 @media (min-width: 50em) {
-  .article_one, .article_three {
+  .article_one {
     background: url(../images/court1.jpg) no-repeat center center fixed;
+  }
+  .article_three {
+    background: url(../images/court2.jpg) no-repeat center center fixed;
   }
 }
 
@@ -136,13 +146,35 @@ header {
 
 .about_article {
   text-align: center;
-  border: 1px solid blue;
+}
+
+.about_article:nth-child(even) {
+  background-color: #e5f3ea;
+}
+
+.about_article h1 {
+  font-size: 3em;
+}
+
+.about_article p {
+  font-size: 1.5em;
+}
+
+.about_article > a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  transition: background-color .2s linear, color .2s linear, border .2s linear;
+}
+
+.created_by p {
+  font-size: 2em;
 }
 
 /* ---FOOTER--- */
 
 footer {
-  font-family: "Mensch", sans-serif;
   background-color: #61BC84;
   text-align: center;
   color: white;
