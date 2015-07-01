@@ -7,6 +7,8 @@ module.exports = function(router, passport) {
   router.use(bodyparser.json());
 
   router.post('/create_user', function(req, res) {
+    console.log('inside Create User');
+    console.log(req.body);
     var newUserData = JSON.parse(JSON.stringify(req.body));
     delete newUserData.email;
     delete newUserData.password;
