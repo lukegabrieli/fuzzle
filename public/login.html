@@ -5,26 +5,29 @@
     <title>Fuzzle</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/homescreen-icon.png" />
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/states.css">
   </head>
   <body>
 
     <header>
       <section class="main_logo">
         <a href="index.html">
-          <img src="http://images.vectorhq.com/images/previews/0fb/tennis-ball-psd-458123.png" class="main_logo_image">
+          <div class="main_logo_image"></div>
           <h1 class="main_logo_text">Fuzzle</h1>
         </a>
       </section>
       <div class="icon-menu"></div>
       <nav class="main_nav">
         <ul>
-          <li><a href="people.html">People</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="login.html">Sign In</a></li>
+          <a href="people.html"><li class="main_nav_item">Players</li></a>
+          <a href="map.html"><li class="main_nav_item">Courts</li></a>
+          <a href="about.html"><li class="main_nav_item">About</li></a>
+          <a href="login.html"><li class="main_nav_item last">Sign In</li></a>
         </ul>
       </nav>
     </header>
@@ -91,12 +94,15 @@
     </main>
 
     <footer>
-      <p>Copyright 2015.</p>
-      <a href="https://github.com/truyennguyen/fuzzle" target="_blank">GitHub Link</a>
+      <p class="copyright">Copyright &copy; Fuzzle, 2015</p>
+      <p class="copyright">Built by: Luke Gabrieli, Philip Hirt, and Truyen Nguyen</p>
+      <section class="footer_links">
+      <a href="https://github.com/truyennguyen/fuzzle" target="_blank" class="icon-github4"></a>
+      </section>
     </footer>
 
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/menu.js" type="text/javascript"></script>
+  <script src="js/menu.js" type="text/javascript"></script>
   <script src="js/login.js"></script>
 </html>

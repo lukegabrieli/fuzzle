@@ -5,6 +5,14 @@
     <title>Fuzzle</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/homescreen-icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/states.css">
+
     <style type="text/css">
       html, body, main, #map-canvas { height: 90%; width: 90%; margin: 0; padding: 0;}
     </style>
@@ -18,15 +26,18 @@
 
     <header>
       <section class="main_logo">
-        <img src="">
-        <h1>Fuzzle</h1>
+        <a href="index.html">
+          <div class="main_logo_image"></div>
+          <h1 class="main_logo_text">Fuzzle</h1>
+        </a>
       </section>
-      <nav>
+      <div class="icon-menu"></div>
+      <nav class="main_nav">
         <ul>
-          <li>People</li>
-          <li>Map</li>
-          <li>About</li>
-          <li>Sign In</li>
+          <a href="people.html"><li class="main_nav_item">Players</li></a>
+          <a href="map.html"><li class="main_nav_item">Courts</li></a>
+          <a href="about.html"><li class="main_nav_item">About</li></a>
+          <a href="login.html"><li class="main_nav_item last">Sign In</li></a>
         </ul>
       </nav>
     </header>
@@ -41,18 +52,21 @@
         <p>Please Note: this map does not include private courts or clubs.</p>
 
       </article>
-      <div id="map-canvas" width="50"></div>
+      <div id="map-canvas"></div>
       <button id="show-data">Show me the money!</button>
     </main>
 
     <footer>
-      <p>Copyright 2015.</p>
-      <a href="https://github.com/truyennguyen/fuzzle" target="_blank">GitHub</a>
-      <a href="mailto:fuzzle@email.com">Contact</a>
+      <p class="copyright">Copyright &copy; Fuzzle, 2015</p>
+      <p class="copyright">Built by: Luke Gabrieli, Philip Hirt, and Truyen Nguyen</p>
+      <section class="footer_links">
+      <a href="https://github.com/truyennguyen/fuzzle" target="_blank" class="icon-github4"></a>
+      </section>
     </footer>
 
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/map-ajax.js"></script>
+  <script src="js/menu.js" type="text/javascript"></script>
 
 </html>

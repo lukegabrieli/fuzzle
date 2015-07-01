@@ -3,8 +3,13 @@
   border-radius: 0;
 }
 
-.main_logo_text:hover {
+.main_logo a:hover .main_logo_text {
   color: #BC6661;
+}
+
+.main_logo a:hover .main_logo_image {
+  background: url(../images/ball-icon-alt.png);
+  background-size: 3em 3em;
 }
 
 @media (min-width: 50em) {
@@ -22,4 +27,8 @@
   background-color: #BC6661;
   color: white;
   border: 1px solid #BC6661;
+}
+
+footer a:hover {
+  color: #BC6661;
 }
