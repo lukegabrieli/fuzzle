@@ -11,9 +11,9 @@ var userSchema = mongoose.Schema({
     password: String
   },
   name: String,
-  location: String,
+  neighborhood: String,
   gender: String,
-  skill_level: Number
+  skillLevel: String
 });
 
 userSchema.methods.generateHash = function(password) {

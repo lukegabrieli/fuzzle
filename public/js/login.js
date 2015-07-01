@@ -19,16 +19,16 @@ $(function() {
 
     var filterData = ["email", "password"];
 
-    var fuzzleUserLogin = JSON.stringify(fuzzleHead, filterData);
+    var fuzzleUserLogin = JSON.stringify(fuzzleHeadLogin, filterData);
 
-    console.log(fuzzleUser);
+    console.log(fuzzleUserLogin);
 
     $.ajax({
-      type: "POST",
-      url: "localhost:3000/api/sign_in",
-      timeout: 2500,
+      type: "GET",
+      url: "http://localhost:3000/api/sign_in",
       data: fuzzleUserLogin,
       datatype: 'json',
+      contentType: 'application/json',
       success: function() {
         console.log('its a match');
       },
@@ -55,12 +55,13 @@ $(function() {
 
     $.ajax({
       type: "POST",
-      url: "localhost:3000/api/create_user",
+      url: "http://localhost:3000/api/create_user",
       timeout: 2500,
       data: fuzzleUser,
       datatype: 'json',
-      success: function() {
-        $('#login_article').append('<p>Congratulations you are now on fuzzle!</p>');
+      contentType: 'application/json',
+      success: function(data) {
+        console.log(data);
         console.log('success');
       },
       error: function() {
