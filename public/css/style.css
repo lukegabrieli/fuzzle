@@ -54,11 +54,11 @@ header {
 
 
 /*-all articles-*/
-.home_article {
+.home_article, .about_article, .map_article {
   text-align: center;
 }
 
-.home_article h1 {
+.home_article h1, .about_article h1, .map_article h1 {
   font-size: 3em;
 }
 
@@ -102,7 +102,7 @@ header {
   border: 1px solid white;
 }
 
-.article_one p {
+.home_article > p, .about_article p, .map_article p {
   font-size: 1.5em;
 }
 
@@ -129,35 +129,44 @@ header {
   border: 1px solid black;
 }
 
-/*-courts article-*/
-
-/*.article_three a {
-  color: black;
-  border: 1px solid black;
-}*/
-
 /* ---PEOPLE--- */
 
 .bit-4 {
   border: 1px solid red;
 }
 
-/* ---ABOUT--- */
+/* ---COURTS--- */
 
-.about_article {
+.map_article_note {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.map_marker {
+  font-family: "Mensch", sans-serif;
   text-align: center;
 }
 
+.map_marker h2 {
+  font-size: 1.6em;
+}
+
+.map_marker p {
+  font-size: 1.2em;
+}
+
+.map_marker a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  transition: background-color .2s linear, color .2s linear, border .2s linear;
+
+}
+
+/* ---ABOUT--- */
+
 .about_article:nth-child(even) {
   background-color: #e5f3ea;
-}
-
-.about_article h1 {
-  font-size: 3em;
-}
-
-.about_article p {
-  font-size: 1.5em;
 }
 
 .about_article > a {

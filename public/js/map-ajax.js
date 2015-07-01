@@ -34,20 +34,23 @@ $(function() {
       map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 11,
         center: {
-          lat: 47.6097,
+          lat: 47.6297,
           lng: -122.3331
-        }
+        },
+        scrollwheel: false,
+        minZoom: 11
       });
 
       function makeMarkers() {
         for(var i = 0; i < tennisCourts.length; i++) {
           googleMarkers.push([tennisCourts[i].name, tennisCourts[i].latitude, tennisCourts[i].longitude]);
 
-          googleInfoWindow.push(['<div id="content">'+
-            '<h3 id="firstHeading" class="firstHeading">' + tennisCourts[i].name + '</h3>'+
+          googleInfoWindow.push(['<div class="map_marker">'+
+            '<h2>' + tennisCourts[i].name + '</h2>'+
             '<p>' + tennisCourts[i].address + '</p>' +
-            '<p><strong>More Info:</strong></p> ' +
+            // '<p>More Info:</p> ' +
             '<p><a href="' + tennisCourts[i].website + '" target="_blank">Court Website</a></p>' +
+            '<p><a href="people.html">Invite A Player</a></p>' +
             '</div>']);
         }
       }
@@ -62,6 +65,8 @@ $(function() {
         var marker = new google.maps.Marker({
             position: position,
             map: map,
+            // animation: google.maps.Animation.BOUNCE,
+            icon: 'images/map-icon.png',
             title: googleMarkers[i][0]
         });
 
