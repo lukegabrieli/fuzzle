@@ -25,7 +25,7 @@ $(function() {
 
     $.ajax({
       type: 'GET',
-      url: 'http://localhost:3000/api/sign_in',
+      url: '/api/sign_in',
       data: fuzzleUserLogin,
       datatype: 'json',
       contentType: 'application/json',
@@ -55,7 +55,7 @@ $(function() {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/api/create_user',
+      url: '/api/create_user',
       timeout: 2500,
       data: fuzzleUser,
       datatype: 'json',

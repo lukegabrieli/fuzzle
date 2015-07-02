@@ -1,4 +1,4 @@
-/* -----LEMONADE GRID----- */
+/* ----------LEMONADE GRID---------- */
 
 * {
   margin: 0;
@@ -102,10 +102,10 @@
 }
 
 @media (min-width: 50em) and (max-width: 68.75em) {
-  .bit-2, .bit-7 {
+  .bit-7 {
     width: 100%;
   }
-  .bit-4, .bit-8, .bit-10, .bit-12 {
+  .bit-2, .bit-4, .bit-8, .bit-10, .bit-12 {
     width: 50%;
   }
 }
@@ -122,9 +122,9 @@
   background: #87D37C;
 }
 
-/* -----LAYOUT----- */
+/* ----------LAYOUT---------- */
 
-/* ---HEADER--- */
+/* ----------HEADER---------- */
 
 .main_logo_image {
   float: left;
@@ -170,11 +170,11 @@
   }
 }
 
-/* ---HOME--- */
+/* ----------HOME---------- */
 
 /*-all article-*/
 
-.home_article, .about_article, .map_article, .signup_article {
+.home_article, .about_article, .map_article, .signup_article, .player_article {
   padding: 6em 0;
 }
 
@@ -186,7 +186,6 @@
 
 .home_article > p {
   width: 80%;
-  margin: 0 auto;
   margin: 3em auto;
 }
 
@@ -214,7 +213,50 @@
   }
 }
 
-/* ---COURTS--- */
+/* ----------PLAYERS---------- */
+
+.player_article p {
+  width: 80%;
+  margin: 1em auto 0em auto;
+}
+
+.player_article_cards {
+  width: 100%;
+}
+
+.player_article_cards_container {
+  width: 80%;
+  margin: 0em auto;
+}
+
+.player_card {
+  margin: .6em 0;
+}
+
+.player_card_info {
+  padding: 1.3em 1em 1.1em 1em;
+}
+
+.player_card_info h1 {
+  margin-bottom: .5em;
+}
+
+.player_card_info p {
+  margin: .5em 0;
+}
+
+.player_card_info p:nth-child(4) {
+  margin-bottom:.5em;
+}
+
+.player_card_info a {
+  display: block;
+  width: 30%;
+  padding: .4em .4em .2em .4em;
+  margin: 0 auto;
+}
+
+/* ----------COURTS---------- */
 
 .map_article_note {
   margin: 2em auto;
@@ -256,7 +298,7 @@
   padding: .3em .3em .1em .3em;
 }
 
-/* ---ABOUT--- */
+/* ----------ABOUT---------- */
 
 .about_article p {
   width: 80%;
@@ -276,11 +318,11 @@
   margin: 1em auto 0 auto;
 }
 
-/* ---SIGN UP--- */
+/* ----------SIGN UP---------- */
 
 .signup_article p {
   width: 80%;
-  margin: 2em auto 0em auto;
+  margin: 1em auto 0em auto;
 }
 
 #create-account-form {
@@ -319,7 +361,7 @@
   }
 }
 
-/* ---FOOTER--- */
+/* ----------FOOTER---------- */
 
 footer {
   padding: 1em;
