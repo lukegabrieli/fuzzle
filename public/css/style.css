@@ -79,7 +79,7 @@ header {
   color: white;
 }
 
-.article_three {
+.article_three, .map_article {
   background: url(../images/court2.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -92,7 +92,7 @@ header {
   .article_one {
     background: url(../images/court1.jpg) no-repeat center center fixed;
   }
-  .article_three {
+  .article_three, .map_article {
     background: url(../images/court2.jpg) no-repeat center center fixed;
   }
 }
@@ -165,6 +165,21 @@ header {
 
 /* ---ABOUT--- */
 
+.about_article.one {
+  background: url(../images/court3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+@media (min-width: 50em) {
+  .about_article.one {
+    background: url(../images/court3.jpg) no-repeat center center fixed;
+  }
+}
+
 .about_article:nth-child(even) {
   background-color: #e5f3ea;
 }
@@ -182,6 +197,21 @@ header {
 }
 
 /* ---SIGN UP--- */
+
+.signup_article.one {
+  background: url(../images/court4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+@media (min-width: 50em) {
+  .signup_article.one {
+    background: url(../images/court4.jpg) no-repeat center center fixed;
+  }
+}
 
 .signup_article:nth-child(even) {
   background-color: #e5f3ea;
