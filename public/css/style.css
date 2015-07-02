@@ -117,11 +117,16 @@ header {
 }
 
 .home_player_card {
-  background-color: #BC6661;
+  background-color: white;
   border-radius: .8em;
   text-align: left;
-  color: white;
-  font-size: 1.2em;
+  color: black;
+  font-size: .9em;
+  transition: box-shadow .2s linear;
+}
+
+.home_player_card h2 {
+  font-size: 2em;
 }
 
 .article_two a {
@@ -233,6 +238,10 @@ header {
   color: black;
   border: 1px solid black;
   transition: background-color .2s linear, color .2s linear, border .2s linear;
+}
+
+.about_article li {
+  font-size: 1.3em;
 }
 
 .created_by p {
