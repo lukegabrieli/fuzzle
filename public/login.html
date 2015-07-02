@@ -27,70 +27,62 @@
           <a href="people.html"><li class="main_nav_item">Players</li></a>
           <a href="map.html"><li class="main_nav_item">Courts</li></a>
           <a href="about.html"><li class="main_nav_item">About</li></a>
-          <a href="login.html"><li class="main_nav_item last">Sign In</li></a>
+          <a href="login.html"><li class="main_nav_item last">Sign Up</li></a>
         </ul>
       </nav>
     </header>
 
-    <main class="login_main">
-       <article class="login_article">
-        <h2>Sign-In</h2>
-        <p>Log in and find your next hitting-partner.</p>
-        <p>Or</p>
-        <p>Create an account
+    <main>
+      <article class="signup_article">
+        <h1>Create A Card</h1>
+        <p>Enter your information below to create a player card.</p>
+        <p>Once created, your card will show on the players page and other users will be able to contact you to set up a match.</p>
       </article>
-      <article class="login_article">
-        <form id="login-form" role="subscribe form">
-          <fieldset>
-            <label for="email">Email</label>
-            <input aria-label="Account Name" name="email" id="login-email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
-            <label for="password">Password</label>
-            <input aria-label="Login-Password" name="password" id="login-password" type="password" value="" placeholder="password" required/>
-            <button id="login">Login</button>
-          </fieldset>
-        </form>
-      </article>
-      <p><strong class="create-account" id="create">Create an account</strong></p>
-      <article class="login_article">
+      <article class="signup_article">
         <form id="create-account-form">
           <fieldset id="create_account_form">
-            <label for="name">Your Name</label>
-            <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="your name" required/>
-            <label for="email">Email</label>
-            <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
-            <label for="password">Password</label>
-            <input aria-label="Password" name="password" id="password" type="password" value="" placeholder="password" required/>
-            <label for="password">Confirm Password</label>
-            <input aria-label="Confirm Password" name="password" id="Password" type="password" value="" placeholder="confirm password" required/>
-            <label for="location">Location</label>
-            <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="4718 11th Ave NE" required/>
-            <label for="skill-level">Skill Level</label>
-            <select id="skill-level" required>
-              <option disabled selected> -- select skill level -- </option>
-              <option value="1.0 -- Novice">1.0 -- Novice</option>
-              <option value="1.5">1.5</option>
-              <option value="2.0 -- Beginner">2.0 -- Beginner</option>
-              <option value="2.5">2.5</option>
-              <option value="3.0 -- Intermediate">3.0 -- Intermediate</option>
-              <option value="3.5">3.5</option>
-              <option value="4.0 -- Advanced">4.0 -- Advanced</option>
-              <option value="4.5">4.5</option>
-              <option value="5.0 -- Expert">5.0 -- Expert</option>
-              <option value="5.5">5.5</option>
-              <option value="6.0 -- Pro">6.0 -- Pro</option>
-              <option value="7.0 -- World-Class">7.0 -- World-Class</option>
-            </select>
-            <label for="gender">Optional: Gender</label>
-            <select id="gender">
-              <option disabled selected> -- gender -- </option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-            <button id="join">Join</button>
+            <section class="form_section">
+              <label for="name">Name:</label>
+              <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="Your Name" required/>
+            </section>
+            <section class="form_section">
+              <label for="email">Email:</label>
+              <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
+            </section>
+            <section class="form_section">
+              <label for="location">Location:</label>
+              <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="Queen Anne" required/>
+            </section>
+            <section class="form_section">
+              <label for="skill-level">Skill Level:</label>
+              <select id="skill-level" required>
+                <option value="1.0 -- Novice">1.0 -- Novice</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0 -- Beginner">2.0 -- Beginner</option>
+                <option value="2.5">2.5</option>
+                <option value="3.0 -- Intermediate">3.0 -- Intermediate</option>
+                <option value="3.5">3.5</option>
+                <option value="4.0 -- Advanced">4.0 -- Advanced</option>
+                <option value="4.5">4.5</option>
+                <option value="5.0 -- Expert">5.0 -- Expert</option>
+                <option value="5.5">5.5</option>
+                <option value="6.0 -- Pro">6.0 -- Pro</option>
+                <option value="7.0 -- World-Class">7.0 -- World-Class</option>
+              </select>
+              <a href="http://www.usta.com/Adult-Tennis/USTA-League/ntrp/" target="_blank" class="ranking_link">Note: Based On USTA Ranking</a>
+            </section>
+            <section class="form_section">
+              <label for="gender">Gender:</label>
+              <select id="gender">
+                <option value="Withheld" selected>Withheld</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <button id="join">Create Card</button>
+            </section>
           </fieldset>
         </form>
       </article>
-      <button id="test">Stringify</button>
     </main>
 
     <footer>
