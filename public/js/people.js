@@ -41,13 +41,13 @@ $(function() {
       var fuzzleCards = [];
       for(var i = 0; i < fuzzlePlayers.length; i++) {
         var card = ''
-        card += '<section class="bit-4">';
-        card += '<section class="fuzzler">';
-        card += '<h1>Player: ' + fuzzlePlayers[i].name + '</h1>';
-        card += '<p>Neighborhood: ' + fuzzlePlayers[i].neighborhood + '</p>';
-        card += '<p>Skill Level: ' + fuzzlePlayers[i].skillLevel + '</p>';
-        card += '<p>Gender: ' + fuzzlePlayers[i].gender + '</p>';
-        card += '<button class="luke-change-me"><a href="mailto:' + fuzzlePlayers[i].email + '?subject=Someone wants to fuzzle with you!">Invite</a></button>';
+        card += '<section class="bit-2 player_card">';
+        card += '<section class="player_card_info">';
+        card += '<h1>'+ fuzzlePlayers[i].name + '</h1>';
+        card += '<p>Neighborhood: <span class="bold card_info">' + fuzzlePlayers[i].neighborhood + '</span></p>';
+        card += '<p>Skill Level: <span class="bold card_info">' + fuzzlePlayers[i].skillLevel + '</span></p>';
+        card += '<p>Gender: <span class="bold card_info">' + fuzzlePlayers[i].gender + '</span></p>';
+        card += '<a href="mailto:' + fuzzlePlayers[i].email + '?subject=Someone wants to fuzzle with you!">Invite</a>';
         card += '</section>';
         card += '</section>';
 
