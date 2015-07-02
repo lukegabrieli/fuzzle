@@ -235,9 +235,16 @@
   height: 32em;
 }
 
+.map_article {
+    margin-bottom: 2em;
+  }
+
 @media (min-width: 50em) {
   #map-canvas {
     width: 100%;
+  }
+  .map_article {
+    margin-bottom: 0;
   }
 }
 
