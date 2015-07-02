@@ -54,11 +54,11 @@ header {
 
 
 /*-all articles-*/
-.home_article, .about_article, .map_article {
+.home_article, .about_article, .map_article, .signup_article {
   text-align: center;
 }
 
-.home_article h1, .about_article h1, .map_article h1 {
+.home_article h1, .about_article h1, .map_article h1, .signup_article h1 {
   font-size: 3em;
 }
 
@@ -102,7 +102,7 @@ header {
   border: 1px solid white;
 }
 
-.home_article > p, .about_article p, .map_article p {
+.home_article > p, .about_article > p, .map_article > p, .signup_article > p {
   font-size: 1.5em;
 }
 
@@ -179,6 +179,37 @@ header {
 
 .created_by p {
   font-size: 2em;
+}
+
+/* ---SIGN UP--- */
+
+.signup_article:nth-child(even) {
+  background-color: #e5f3ea;
+}
+
+#create-account-form {
+  font-size: 1.5em;
+}
+
+.form_section {
+  text-align: left;
+}
+
+.form_section input, .form_section select {
+  border: none;
+}
+
+.form_section button {
+  font-family: "Mensch", sans-serif;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 1em;
+  transition: background-color .2s linear, color .2s linear, border .2s linear;
+}
+
+.ranking_link {
+  font-size: .6em;
+  color: black;
 }
 
 /* ---FOOTER--- */
