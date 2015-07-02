@@ -1,5 +1,8 @@
 $(function() {
 
+  var $goPlay = $('#goPlay');
+  var $join = $('#join');
+
   var User = function(name, options) {
     this.name = name;
     this.email = options.email;
@@ -8,6 +11,8 @@ $(function() {
     this.skillLevel = options.skillLevel;
     this.gender = options.gender;
   };
+
+  $goPlay.hide();
 
   $('#login-form').submit(function(e) {
     e.preventDefault();
@@ -63,11 +68,20 @@ $(function() {
       success: function(data) {
         console.log(data);
         console.log('success');
+
+        $join.attr('disabled', 'disabled');
       },
       error: function() {
         console.log('sucks dude');
+      },
+      complete: function() {
+        $join.slideUp();
+        $goPlay.slideDown();
       }
     });
+
+    // $('#join').prop('diasbled');
+
   });
 
 });
