@@ -189,6 +189,10 @@
   margin: 3em auto;
 }
 
+.article_three > p {
+  margin-bottom: 1em;
+}
+
 /*-players article-*/
 
 .article_two_cards {
@@ -196,21 +200,19 @@
 }
 
 .home_player_card {
-  padding: 1.3em 1em 1.1em 1em;
+  padding: 1.5em 1.2em 1.3em 1.2em;
+}
+
+.home_player_card p {
+  margin-top: .4em;
 }
 
 /*-courts article-*/
 
-.article_three img {
-  width: 180%;
-  margin: 4em 0 6em -40%;
-}
 
-@media (min-width: 50em) {
-  .article_three img {
-    width: 100%;
-    margin: 4em auto 6em auto;
-  }
+.home_article_map {
+  width: 100%;
+  margin: 4em auto 6em auto;
 }
 
 /* ----------PLAYERS---------- */
@@ -302,7 +304,16 @@
 
 .about_article p {
   width: 80%;
-  margin: 2em auto 0em auto;
+  margin: 1em auto 1em auto;
+}
+
+.about_article ol {
+  width: 80%;
+  margin: 3em auto 3em auto;
+}
+
+.about_article li {
+  margin: 1em auto 1em auto;
 }
 
 .about_article img {

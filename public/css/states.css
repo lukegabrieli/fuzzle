@@ -39,6 +39,6 @@ footer a:hover {
   cursor: pointer;
 }
 
-.player_card_info:hover {
+.player_card_info:hover, .home_player_card:hover {
   box-shadow: 0px 0px 5px .5px rgba(97, 188, 132, .5);
 }
