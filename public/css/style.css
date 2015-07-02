@@ -15,6 +15,7 @@ header {
   width: 3em;
   background: url(../images/ball-icon.png);
   background-size: 3em 3em;
+  -moz-transition: background .2s linear;
   transition: background .2s linear;
 }
 
@@ -24,6 +25,7 @@ header {
   font-size: 3em;
   font-family: "Mensch Bold", sans-serif;
   transition: color .2s linear;
+  -moz-transition: color .2s linear;
 }
 
 .icon-menu, .icon-cross {
@@ -292,6 +294,7 @@ header {
 .ranking_link {
   font-size: .6em;
   color: black;
+  transition: color .2s linear;
 }
 
 /* ----------FOOTER---------- */
