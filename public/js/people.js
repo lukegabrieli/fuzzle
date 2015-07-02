@@ -13,7 +13,7 @@ $(function() {
 
   $.ajax({
     type: 'GET',
-    url: 'http://localhost:3000/api//tennis/getUsers',
+    url: '/api/tennis/getUsers',
     datatype: 'json',
     beforeSend: function cleanSlate() {
       $('.fuzzler').each(function() {
