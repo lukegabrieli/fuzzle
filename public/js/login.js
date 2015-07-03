@@ -12,7 +12,8 @@ $(function() {
     this.gender = options.gender;
   };
 
-  $goPlay.hide();
+  // $goPlay.hide();
+  $goPlay.css('visibility', 'hidden');
 
   $('#login-form').submit(function(e) {
     e.preventDefault();
@@ -75,8 +76,10 @@ $(function() {
         console.log('sucks dude');
       },
       complete: function() {
-        $join.slideUp();
-        $goPlay.slideDown();
+        $join.text('Congrats! You are now on Fuzzle!');
+        $join.attr('class', 'congrats_message');
+        $goPlay.css('visibility', 'visible');
+        $goPlay.fadeIn();
       }
     });
 
