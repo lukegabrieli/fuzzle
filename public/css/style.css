@@ -2,6 +2,7 @@
 
 .bold {
   font-family: "Mensch Bold", sans-serif;
+  letter-spacing: .05em;
 }
 
 /* ----------HEADER---------- */
@@ -41,7 +42,7 @@ header {
 }
 
 .main_nav_item {
-  border-bottom: 1px solid white;
+  border-bottom: .1em solid white;
   transition: background-color .2s linear, box-shadow .2s linear;
 }
 
@@ -105,7 +106,7 @@ header {
 
 .article_one a, .article_three a {
   color: white;
-  border: 1px solid white;
+  border: .1em solid white;
 }
 
 .home_article > p, .about_article > p, .map_article > p, .signup_article > p, .player_article > p {
@@ -133,7 +134,7 @@ header {
 
 .article_two a {
   color: black;
-  border: 1px solid black;
+  border: .1em solid black;
 }
 
 /* ----------PLAYERS---------- */
@@ -179,7 +180,7 @@ header {
 
 .player_card_info a {
   text-align: center;
-  border: 1px solid black;
+  border: .1em solid black;
   text-decoration: none;
   color: black;
   transition: background-color .2s linear, color .2s linear, border .2s linear;
@@ -208,7 +209,7 @@ header {
 .map_marker a {
   text-decoration: none;
   color: black;
-  border: 1px solid black;
+  border: .1em solid black;
   transition: background-color .2s linear, color .2s linear, border .2s linear;
 
 }
@@ -238,7 +239,7 @@ header {
   font-size: 1.5em;
   text-decoration: none;
   color: black;
-  border: 1px solid black;
+  border: .1em solid black;
   transition: background-color .2s linear, color .2s linear, border .2s linear;
 }
 
@@ -285,7 +286,7 @@ header {
 
 .create_button, .confirm_message a {
   font-family: "Mensch", sans-serif;
-  border: 1px solid black;
+  border: .1em solid black;
   background-color: transparent;
   font-size: 1em;
   transition: background-color .2s linear, color .2s linear, border .2s linear;
