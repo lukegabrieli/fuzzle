@@ -25,7 +25,7 @@
   border: 1px solid #BC6661;
 }
 
-.article_two a:hover, .article_three a:hover, .about_article > a:hover, .map_marker a:hover, .form_section button:hover, .player_card_info a:hover {
+.article_two a:hover, .article_three a:hover, .about_article > a:hover, .map_marker a:hover, .create_button:hover, .player_card_info a:hover, .confirm_message a:hover {
   background-color: #BC6661;
   color: white;
   border: 1px solid #BC6661;
@@ -35,7 +35,7 @@ footer a:hover {
   color: #BC6661;
 }
 
-.form_section button:hover {
+.create_button:hover {
   cursor: pointer;
 }
 
@@ -45,4 +45,15 @@ footer a:hover {
 
 .ranking_link:hover {
   color: #BC6661;
+}
+
+.congrats_message:hover {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: default;
+}
+
+.congrats_message:focus {
+  outline: none;
 }
