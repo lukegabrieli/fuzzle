@@ -6,6 +6,10 @@ $(function() {
   var $goPlay = $('#goPlay');
   var $join = $('#join');
 
+  $name.prop('required', false);
+  $email.prop('required', false);
+  $neighborhood.prop('required', false);
+
   var User = function(name, options) {
     this.name = name;
     this.email = options.email;
@@ -82,7 +86,6 @@ $(function() {
       $goPlay.css('visibility', 'visible');
 
     } else {
-
       e.preventDefault();
 
       var fuzzleHead = new User($('#name').val(), {
