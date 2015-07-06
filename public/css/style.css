@@ -313,8 +313,27 @@ header {
   cursor: text;
 }
 
+.confirm_message p {
+  color: #BC6661;
+  font-size: 1.5em;
+}
 
+.error_alert,
+.placeholder_error::-webkit-input-placeholder {
+  color: #BC6661;
+}
 
+.placeholder_error:-moz-placeholder {
+  color: #BC6661;
+}
+
+.placeholder_error::-moz-placeholder {
+  color: #BC6661;
+}
+
+.placeholder_error:-ms-input-placeholder {
+  color: #BC6661;
+}
 /* ----------FOOTER---------- */
 
 footer {
