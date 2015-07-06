@@ -121,6 +121,10 @@ $(function() {
             $('#form-error').remove();
           }
 
+          if($goPlay.has('a')) {
+            $('#confirm-link').remove();
+          }
+
           $join.text('Congrats! You are now on Fuzzle!');
           $join.attr('class', 'congrats_message');
           $goPlay.append('<a href="people.html" id="confirm-link" class="clearfix">Find a Player</a>')
