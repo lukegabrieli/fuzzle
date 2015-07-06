@@ -43,15 +43,15 @@
           <fieldset id="create_account_form">
             <section class="form_section">
               <label for="name">Name:</label>
-              <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="Your Name" required/>
+              <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="Your Name" class="placeholder_regular" required/>
             </section>
             <section class="form_section">
               <label for="email">Email:</label>
-              <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" required/>
+              <input aria-label="User Name" name="email" id="email" type="email" value="" placeholder="fuzze-head@gmail.com" class="placeholder_regular" required/>
             </section>
             <section class="form_section">
               <label for="location">Neighborhood:</label>
-              <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="Queen Anne" required/>
+              <input aria-label="Location" name="location" id="location" type="text" value="" placeholder="Queen Anne" class="placeholder_regular" required/>
             </section>
             <section class="form_section">
               <label for="skill-level">Skill Level:</label>
@@ -78,12 +78,12 @@
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
-              <button id="join" class="create_button">Create Card</button>
+            </section>
+            <button id="join" class="create_button">Create Card</button>
           </fieldset>
         </form>
-
         <section id="goPlay" class="confirm_message">
-          <a href="people.html" class="clearfix">Find a Player</a>
+          <a href="people.html" id="confirm-link" class="clearfix">Find a Player</a>
         </section>
       </article>
     </main>
