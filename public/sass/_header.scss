@@ -1,0 +1,115 @@
+.main_logo_image {
+  float: left;
+  margin: 1.9em .6em 1em .5em;
+}
+
+.main_logo_text {
+  position: relative;
+  display: inline-block;
+  margin: .6em 0 .5em 0;
+  padding-top: .15em;
+}
+
+.icon-menu, .icon-cross {
+  float: right;
+  margin: -1.85em .5em 0 0;
+}
+
+.main_nav {
+  display: none;
+  margin: 0em;
+}
+
+.main_nav_item {
+  padding: 1.2em 0 .8em 2em;
+}
+
+.main_nav_item:hover {
+  background-color: #BC6661;
+  border-radius: 0;
+}
+
+.main_logo a:hover .main_logo_text {
+  color: #BC6661;
+}
+
+.main_logo a:hover .main_logo_image {
+  background: url(../images/ball-icon-alt.png);
+  background-size: 3em 3em;
+}
+
+@media (min-width: 50em) {
+  .main_nav_item:hover {
+    background-color: #61BC84;
+    border-radius: .5em;
+    box-shadow: 0 0 .35em .1em #BC6661;
+  }
+}
+
+@media (min-width: 50em) {
+  .icon-menu, .icon-cross {
+    display: none;
+  }
+
+  .main_nav {
+    display: inline-block !important;
+    float: right;
+    margin-top: -4.8em;
+  }
+
+  .main_nav_item {
+    display: inline-block;
+    margin: 0 .5em;
+    padding: .8em .7em .5em .7em;
+  }
+}
+
+header {
+  background-color: #61BC84;
+}
+
+.main_logo_image {
+  height: 3em;
+  width: 3em;
+  background: url(../images/ball-icon.png);
+  background-size: 3em 3em;
+  -moz-transition: background .2s linear;
+  transition: background .2s linear;
+}
+
+.main_logo_text {
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Mensch Bold", sans-serif;
+  transition: color .2s linear;
+  -moz-transition: color .2s linear;
+}
+
+.icon-menu, .icon-cross {
+  color: white;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+.main_nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.main_nav_item {
+  border-bottom: .1em solid white;
+  transition: background-color .2s linear, box-shadow .2s linear;
+}
+
+.last {
+  border-bottom: none;
+}
+
+@media (min-width: 50em) {
+  .main_nav_item {
+    border-bottom: none;
+    border-radius: .5em;
+  }
+}
