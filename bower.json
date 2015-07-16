@@ -10,8 +10,15 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "db",
+    "lib",
+    "models",
+    "routes",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "public",
+    "./!(public/sass/_header.scss)"
   ],
-  "main": "./public/sass/_header.scss"
+  "main": "public/sass/_header.scss"
 }
