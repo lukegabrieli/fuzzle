@@ -17,7 +17,6 @@
     "**/*.md",
     "**/*.js",
     "**/*.json",
-    "public",
     "./!(public/sass/_header.scss)"
   ],
   "main": "public/sass/_header.scss"
