@@ -13,5 +13,5 @@
     "test",
     "tests"
   ],
-  "main": "public/sass/_header.scss"
+  "main": "_header.scss"
 }
