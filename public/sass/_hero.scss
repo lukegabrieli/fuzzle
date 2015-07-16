@@ -1,0 +1,78 @@
+@import 'hero/_index.scss';
+
+.home_hero, .people_hero, .courts_hero, .about_hero, .login_hero {
+  padding: 6em 0;
+  text-align: center;
+  background-color: grey;
+  color: $white;
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    width: 80%;
+    margin: 1em auto 0 auto;
+    font-size: 1.5em;
+  }
+  a {
+    color: $white;
+    border: .1em solid $white;
+    padding: .7em .7em .5em .7em;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color .2s linear, color .2s linear, border .2s linear;
+    &:hover {
+      background-color: $highlight-color;
+      border: .1em solid $highlight-color;
+    }
+  }
+  ol {
+    margin: 2em 0;
+    font-size: 1.3em;
+    li {
+      margin: .5em 0;
+    }
+  }
+  .home_p {
+    margin-bottom: 2em;
+  }
+}
+
+// .home_hero {
+//   @include backgroundImageCenter(map-get($courtImages, court1));
+//   @media (min-width: 50em) {
+//     @include backgroundImageFixed(map-get($courtImages, court1));
+//   }
+// }
+// .people_hero {
+//   @include backgroundImageCenter(map-get($courtImages, court2));
+//   @media (min-width: 50em) {
+//     @include backgroundImageFixed(map-get($courtImages, court2));
+//   }
+// }
+// .map_hero {
+//   @include backgroundImageCenter(map-get($courtImages, court3));
+//   @media (min-width: 50em) {
+//     @include backgroundImageFixed(map-get($courtImages, court3));
+//   }
+// }
+// .about_hero {
+//   @include backgroundImageCenter(map-get($courtImages, court4));
+//   @media (min-width: 50em) {
+//     @include backgroundImageFixed(map-get($courtImages, court4));
+//   }
+// }
+// .login_hero {
+//   @include backgroundImageCenter(map-get($courtImages, court5));
+//   @media (min-width: 50em) {
+//     @include backgroundImageFixed(map-get($courtImages, court5));
+//   }
+// }
+
+@each $page, $court in $courtImages {
+  .#{$page}_hero {
+    @include backgroundImageCenter($court);
+    @media (min-width: 50em) {
+      @include backgroundImageFixed($court);
+    }
+  }
+}

@@ -1,130 +1,108 @@
+@import 'style/_index.scss';
+
 /* ----------HOME---------- */
 
+// ALL
 
-/*-all articles-*/
-.home_article, .about_article, .map_article, .signup_article, .player_article {
+.home_article {
   text-align: center;
-}
-
-.home_article h1, .about_article h1, .map_article h1, .signup_article h1, .player_article h1 {
-  font-size: 3em;
-}
-
-.home_article a {
-  font-size: 1.5em;
-  text-decoration: none;
-  transition: background-color .2s linear, color .2s linear, border .2s linear;
-}
-
-/*-welcome article-*/
-
-.article_one {
-  background: url(../images/court1.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-.article_three, .map_article {
-  background: url(../images/court2.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-@media (min-width: 50em) {
-  .article_one {
-    background: url(../images/court1.jpg) no-repeat center center fixed;
+  h1 {
+    font-size: 3em;
   }
-  .article_three, .map_article {
-    background: url(../images/court2.jpg) no-repeat center center fixed;
+  a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: map-get($transitions, links);
+  }
+  > p {
+    font-size: 1.5em;
   }
 }
 
-.article_one a, .article_three a {
-  color: white;
-  border: .1em solid white;
-}
-
-.home_article > p, .about_article > p, .map_article > p, .signup_article > p, .player_article > p {
-  font-size: 1.5em;
-}
-
-/*-players article-*/
+// PLAYERS
 
 .article_two {
-  background-color: #e5f3ea;
+  background-color: $secondary-color;
+  a {
+    color: $black;
+    border: .1em solid $black;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+  .home_player_card {
+    background-color: $white;
+    border-radius: .8em;
+    text-align: left;
+    color: $black;
+    font-size: .9em;
+    transition: map-get($transitions, cardShadow);
+    &:hover {
+      box-shadow: 0 0 .35em .1em rgba(97, 188, 132, .5);
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
 }
 
-.home_player_card {
-  background-color: white;
-  border-radius: .8em;
-  text-align: left;
-  color: black;
-  font-size: .9em;
-  transition: box-shadow .2s linear;
-}
+// COURTS
 
-.home_player_card h2 {
-  font-size: 2em;
-}
-
-.article_two a {
-  color: black;
-  border: .1em solid black;
+.article_three {
+  @include backgroundImageCenter(map-get($courtImages, people));
+  @media (min-width: 50em) {
+    @include backgroundImageFixed(map-get($courtImages, people));
+  }
+  a {
+    color: $white;
+    border: .1em solid $white;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
 }
 
 /* ----------PLAYERS---------- */
 
-.player_article {
-  background: url(../images/court5.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-@media (min-width: 50em) {
-  .player_article {
-    background: url(../images/court5.jpg) no-repeat center center fixed;
-  }
-}
-
 .player_article_cards {
-  background-color: #e5f3ea;
+  background-color: $secondary-color;
 }
 
 .player_card_info {
-  background-color: white;
+  background-color: $white;
   border-radius: .8em;
-  color: black;
+  color: $black;
   font-size: 1.2em;
-  transition: box-shadow .2s linear;
+  transition: map-get($transitions, cardShadow);
+  &:hover {
+    box-shadow: 0 0 .35em .1em rgba(97, 188, 132, .5);
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: .8em;
+  }
+  a {
+    text-align: center;
+    border: .1em solid $black;
+    text-decoration: none;
+    color: $black;
+    transition: map-get($transitions, links);
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
 }
 
 .card_info {
   font-size: 1.2em;
-}
-
-.player_card_info h1 {
-  font-size: 1.7em;
-}
-
-.player_card_info p{
-  font-size: .8em;
-}
-
-.player_card_info a {
-  text-align: center;
-  border: .1em solid black;
-  text-decoration: none;
-  color: black;
-  transition: background-color .2s linear, color .2s linear, border .2s linear;
 }
 
 /* ----------COURTS---------- */
@@ -135,82 +113,49 @@
 }
 
 .map_marker {
-  font-family: "Mensch", sans-serif;
+  font-family: $primary-font;
   text-align: center;
-}
-
-.map_marker h2 {
-  font-size: 1.6em;
-}
-
-.map_marker p {
-  font-size: 1.2em;
-}
-
-.map_marker a {
-  text-decoration: none;
-  color: black;
-  border: .1em solid black;
-  transition: background-color .2s linear, color .2s linear, border .2s linear;
-
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    border: .1em solid $black;
+    transition: map-get($transitions, links);
+    &:hover{
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
 }
 
 /* ----------ABOUT---------- */
 
-.about_article.one {
-  background: url(../images/court3.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-@media (min-width: 50em) {
-  .about_article.one {
-    background: url(../images/court3.jpg) no-repeat center center fixed;
+.about_article {
+  text-align: center;
+  h1 {
+    font-size: 3em;
   }
-}
-
-.about_article:nth-child(even) {
-  background-color: #e5f3ea;
-}
-
-.about_article > a {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: black;
-  border: .1em solid black;
-  transition: background-color .2s linear, color .2s linear, border .2s linear;
-}
-
-.about_article li {
-  font-size: 1.3em;
-}
-
-.created_by p {
-  font-size: 2em;
+  p {
+    font-size: 2em;
+  }
+  &:nth-child(even) {
+    background-color: $secondary-color;
+  }
 }
 
 /* ----------SIGN UP---------- */
 
-.signup_article.one {
-  background: url(../images/court4.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-@media (min-width: 50em) {
-  .signup_article.one {
-    background: url(../images/court4.jpg) no-repeat center center fixed;
+.signup_article {
+  text-align: center;
+  &:nth-child(even) {
+    background-color: $secondary-color;
   }
-}
-
-.signup_article:nth-child(even) {
-  background-color: #e5f3ea;
 }
 
 #create-account-form {
@@ -226,90 +171,80 @@
 }
 
 .create_button, .confirm_message a {
-  font-family: "Mensch", sans-serif;
-  border: .1em solid black;
+  font-family: $primary-font;
+  border: .1em solid $black;
   background-color: transparent;
   font-size: 1em;
-  transition: background-color .2s linear, color .2s linear, border .2s linear;
+  transition: map-get($transitions, links);
 }
 
-.confirm_message a {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: black;
+.create_button {
+  &:hover {
+    cursor: pointer;
+    background-color: $highlight-color;
+    color: $white;
+    border: .1em solid $highlight-color;
+  }
+}
+
+.confirm_message {
+  a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+  p {
+    color: $highlight-color;
+    font-size: 1.5em;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $black;
+    border: none;
+    cursor: default;
+  }
 }
 
 .ranking_link {
   font-size: .6em;
-  color: black;
-  transition: color .2s linear;
+  color: $black;
+  transition: map-get($transitions, rankingLink);
+  &:hover {
+    color: $highlight-color;
+  }
 }
 
 .congrats_message {
-  font-family: "Mensch", sans-serif;
+  font-family: $primary-font;
   font-size: 1em;
-  color: black;
+  color: $black;
   background-color: transparent;
   font-size: 1em;
   border: none;
   cursor: text;
-}
-
-.confirm_message p {
-  color: #BC6661;
-  font-size: 1.5em;
+  &:focus {
+    outline: none;
+  }
 }
 
 .error_alert,
 .placeholder_error::-webkit-input-placeholder {
-  color: #BC6661;
+  color: $highlight-color;
 }
 
 .placeholder_error:-moz-placeholder {
-  color: #BC6661;
+  color: $highlight-color;
 }
 
 .placeholder_error::-moz-placeholder {
-  color: #BC6661;
+  color: $highlight-color;
 }
 
 .placeholder_error:-ms-input-placeholder {
-  color: #BC6661;
-}
-
-
-// STATES
-
-.article_one a:hover {
-  background-color: #BC6661;
-  border: .1em solid #BC6661;
-}
-
-.article_two a:hover, .article_three a:hover, .about_article > a:hover, .map_marker a:hover, .create_button:hover, .player_card_info a:hover, .confirm_message a:hover {
-  background-color: #BC6661;
-  color: white;
-  border: .1em solid #BC6661;
-}
-
-.create_button:hover {
-  cursor: pointer;
-}
-
-.player_card_info:hover, .home_player_card:hover {
-  box-shadow: 0 0 .35em .1em rgba(97, 188, 132, .5);
-}
-
-.ranking_link:hover {
-  color: #BC6661;
-}
-
-.congrats_message:hover {
-  background-color: transparent;
-  color: black;
-  border: none;
-  cursor: default;
-}
-
-.congrats_message:focus {
-  outline: none;
+  color: $highlight-color;
 }

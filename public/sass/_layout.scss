@@ -1,54 +1,37 @@
 /* ----------HOME---------- */
 
-/*-all article-*/
+// All
 
-.home_article, .about_article, .map_article, .signup_article, .player_article {
+.home_article {
   padding: 6em 0;
+  a {
+    padding: .7em .7em .5em .7em;
+  }
+  > p {
+    width: 80%;
+    margin: 2em auto 0 auto;
+  }
 }
 
-.home_article a {
-  padding: .7em .7em .5em .7em;
-}
-
-/*-welcome article-*/
-
-.home_article > p {
-  width: 80%;
-  margin: 3em auto;
-}
-
-.article_three > p {
-  margin-bottom: 1em;
-}
-
-/*-players article-*/
+// PLAYERS
 
 .article_two_cards {
-  margin: 0 auto 5em auto;
+  margin: 4em auto;
+  .home_player_card {
+    padding: 1.5em 1.2em 1.3em 1.2em;
+    p {
+      margin-top: .4em;
+    }
+  }
 }
 
-.home_player_card {
-  padding: 1.5em 1.2em 1.3em 1.2em;
-}
-
-.home_player_card p {
-  margin-top: .4em;
-}
-
-/*-courts article-*/
-
+// COURTS
 
 .home_article_map {
-  width: 100%;
-  margin: 4em auto 6em auto;
+  margin: 5em auto;
 }
 
 /* ----------PLAYERS---------- */
-
-.player_article p {
-  width: 80%;
-  margin: 1em auto 0em auto;
-}
 
 .player_article_cards {
   width: 100%;
@@ -65,25 +48,21 @@
 
 .player_card_info {
   padding: 1.3em 1em 1.1em 1em;
-}
-
-.player_card_info h1 {
-  margin-bottom: .5em;
-}
-
-.player_card_info p {
-  margin: .5em 0;
-}
-
-.player_card_info p:nth-child(4) {
-  margin-bottom:.5em;
-}
-
-.player_card_info a {
-  display: block;
-  width: 30%;
-  padding: .4em .4em .2em .4em;
-  margin: 0 auto;
+  h1 {
+    margin-bottom: .5em;
+  }
+  p {
+    margin: .5em 0;
+  }
+  &:nth-child(4) {
+    margin-bottom:.5em;
+  }
+  a {
+    display: block;
+    width: 30%;
+    padding: .4em .4em .2em .4em;
+    margin: 0 auto;
+  }
 }
 
 /* ----------COURTS---------- */
@@ -92,95 +71,63 @@
   margin: 2em auto;
 }
 
-.map_article h1 {
-  margin-bottom: 1em;
-}
-
-.map_article p {
-  width: 80%;
-  margin: 1em auto 0em auto;
-}
-
 #map-canvas {
   width: 80%;
   margin: 0 auto;
   height: 32em;
-}
-
-.map_article {
-    margin-bottom: 2em;
-  }
-
-@media (min-width: 50em) {
-  #map-canvas {
+  @media (min-width: 50em) {
     width: 100%;
   }
-  .map_article {
-    margin-bottom: 0;
+}
+
+.map_marker {
+  p {
+    margin: .5em 0 1em 0;
   }
-}
-
-.map_marker p {
-  margin: .5em 0 1em 0;
-}
-
-.map_marker a {
-  padding: .3em .3em .1em .3em;
+  a {
+    padding: .3em .3em .1em .3em;
+  }
 }
 
 /* ----------ABOUT---------- */
 
-.about_article p {
-  width: 80%;
-  margin: 1em auto 1em auto;
-}
-
-.about_article ol {
-  width: 80%;
-  margin: 3em auto 3em auto;
-}
-
-.about_article li {
-  margin: 1em auto 1em auto;
-}
-
-.about_article img {
-  width: 70%;
-}
-
-.about_article section {
-  margin-top: 3em;
-}
-
-.created_by p {
-  width: 80%;
-  margin: 1em auto 0 auto;
+.about_article, {
+  padding: 6em 0;
+  p {
+    width: 80%;
+    margin: 1em auto 0 auto;
+  }
+  img {
+    width: 70%;
+  }
+  section {
+    margin-top: 3em;
+  }
 }
 
 /* ----------SIGN UP---------- */
 
-.signup_article p {
-  width: 80%;
-  margin: 1em auto 0em auto;
+.signup_article, {
+  padding: 6em 0;
 }
 
 #create-account-form {
   width: 90%;
   margin: 0 auto;
+  @media (min-width: 50em) {
+    width: 60%;
+  }
 }
 
 .form_section input, .form_section select {
   width: 100%;
   height: 4em;
   margin: .5em 0 2em 0;
+  padding: 1em;
 }
 
 #skill-level {
   margin-bottom: 0;
-}
-
-.form_section input {
-  padding: 1em;
 }
 
 .create_button, .confirm_message a {
@@ -189,28 +136,25 @@
   padding-top: .2em;
 }
 
-.confirm_message a {
-  padding: .5em 0 .2em 0;
-}
-
 .ranking_link {
   display: inline-block;
   margin-bottom: 2em;
 }
 
-@media (min-width: 50em) {
-  #create-account-form {
-    width: 60%;
-  }
-}
-
 .confirm_message {
   width: 60%;
   margin: 0 auto;
+  a {
+    padding: .5em 0 .2em 0;
+  }
 }
 
 .congrats_message {
   width: 100%;
   height: 2em;
   margin: 0 auto;
+}
+
+.error_alert {
+  margin-top: 1em;
 }
