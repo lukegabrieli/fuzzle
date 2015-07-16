@@ -1,0 +1,17 @@
+{
+  "name": "fuzzle",
+  "version": "0.0.1",
+  "homepage": "https://github.com/truyennguyen/fuzzle",
+  "authors": [
+    "Luke Gabrieli <usetheforce10@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "public/sass/_header.scss"
+}
