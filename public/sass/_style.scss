@@ -1,0 +1,250 @@
+@import 'style/_index.scss';
+
+/* ----------HOME---------- */
+
+// ALL
+
+.home_article {
+  text-align: center;
+  h1 {
+    font-size: 3em;
+  }
+  a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: map-get($transitions, links);
+  }
+  > p {
+    font-size: 1.5em;
+  }
+}
+
+// PLAYERS
+
+.article_two {
+  background-color: $secondary-color;
+  a {
+    color: $black;
+    border: .1em solid $black;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+  .home_player_card {
+    background-color: $white;
+    border-radius: .8em;
+    text-align: left;
+    color: $black;
+    font-size: .9em;
+    transition: map-get($transitions, cardShadow);
+    &:hover {
+      box-shadow: 0 0 .35em .1em rgba(97, 188, 132, .5);
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+
+// COURTS
+
+.article_three {
+  @include backgroundImageCenter(map-get($courtImages, people));
+  @media (min-width: 50em) {
+    @include backgroundImageFixed(map-get($courtImages, people));
+  }
+  a {
+    color: $white;
+    border: .1em solid $white;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+}
+
+/* ----------PLAYERS---------- */
+
+.player_article_cards {
+  background-color: $secondary-color;
+}
+
+.player_card_info {
+  background-color: $white;
+  border-radius: .8em;
+  color: $black;
+  font-size: 1.2em;
+  transition: map-get($transitions, cardShadow);
+  &:hover {
+    box-shadow: 0 0 .35em .1em rgba(97, 188, 132, .5);
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: .8em;
+  }
+  a {
+    text-align: center;
+    border: .1em solid $black;
+    text-decoration: none;
+    color: $black;
+    transition: map-get($transitions, links);
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+}
+
+.card_info {
+  font-size: 1.2em;
+}
+
+/* ----------COURTS---------- */
+
+.map_article_note {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.map_marker {
+  font-family: $primary-font;
+  text-align: center;
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    border: .1em solid $black;
+    transition: map-get($transitions, links);
+    &:hover{
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+}
+
+/* ----------ABOUT---------- */
+
+.about_article {
+  text-align: center;
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 2em;
+  }
+  &:nth-child(even) {
+    background-color: $secondary-color;
+  }
+}
+
+/* ----------SIGN UP---------- */
+
+.signup_article {
+  text-align: center;
+  &:nth-child(even) {
+    background-color: $secondary-color;
+  }
+}
+
+#create-account-form {
+  font-size: 1.5em;
+}
+
+.form_section {
+  text-align: left;
+}
+
+.form_section input, .form_section select {
+  border: none;
+}
+
+.create_button, .confirm_message a {
+  font-family: $primary-font;
+  border: .1em solid $black;
+  background-color: transparent;
+  font-size: 1em;
+  transition: map-get($transitions, links);
+}
+
+.create_button {
+  &:hover {
+    cursor: pointer;
+    background-color: $highlight-color;
+    color: $white;
+    border: .1em solid $highlight-color;
+  }
+}
+
+.confirm_message {
+  a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      background-color: $highlight-color;
+      color: $white;
+      border: .1em solid $highlight-color;
+    }
+  }
+  p {
+    color: $highlight-color;
+    font-size: 1.5em;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $black;
+    border: none;
+    cursor: default;
+  }
+}
+
+.ranking_link {
+  font-size: .6em;
+  color: $black;
+  transition: map-get($transitions, rankingLink);
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+.congrats_message {
+  font-family: $primary-font;
+  font-size: 1em;
+  color: $black;
+  background-color: transparent;
+  font-size: 1em;
+  border: none;
+  cursor: text;
+  &:focus {
+    outline: none;
+  }
+}
+
+.error_alert,
+.placeholder_error::-webkit-input-placeholder {
+  color: $highlight-color;
+}
+
+.placeholder_error:-moz-placeholder {
+  color: $highlight-color;
+}
+
+.placeholder_error::-moz-placeholder {
+  color: $highlight-color;
+}
+
+.placeholder_error:-ms-input-placeholder {
+  color: $highlight-color;
+}

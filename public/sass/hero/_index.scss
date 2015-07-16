@@ -1,0 +1,20 @@
+$courtImages: (
+  home: '../images/court1.jpg',
+  people: '../images/court2.jpg',
+  courts: '../images/court3.jpg',
+  about: '../images/court4.jpg',
+  login: '../images/court5.jpg'
+);
+
+@mixin backgroundImageCenter($courtImages...) {
+  background: url(#{$courtImages}) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $white;
+}
+
+@mixin backgroundImageFixed($courtImages...) {
+   background: url(#{$courtImages}) no-repeat center center fixed;
+}

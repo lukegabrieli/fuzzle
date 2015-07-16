@@ -1,0 +1,160 @@
+/* ----------HOME---------- */
+
+// All
+
+.home_article {
+  padding: 6em 0;
+  a {
+    padding: .7em .7em .5em .7em;
+  }
+  > p {
+    width: 80%;
+    margin: 2em auto 0 auto;
+  }
+}
+
+// PLAYERS
+
+.article_two_cards {
+  margin: 4em auto;
+  .home_player_card {
+    padding: 1.5em 1.2em 1.3em 1.2em;
+    p {
+      margin-top: .4em;
+    }
+  }
+}
+
+// COURTS
+
+.home_article_map {
+  margin: 5em auto;
+}
+
+/* ----------PLAYERS---------- */
+
+.player_article_cards {
+  width: 100%;
+}
+
+.player_article_cards_container {
+  width: 80%;
+  margin: 0em auto;
+}
+
+.player_card {
+  margin: .6em 0;
+}
+
+.player_card_info {
+  padding: 1.3em 1em 1.1em 1em;
+  h1 {
+    margin-bottom: .5em;
+  }
+  p {
+    margin: .5em 0;
+  }
+  &:nth-child(4) {
+    margin-bottom:.5em;
+  }
+  a {
+    display: block;
+    width: 30%;
+    padding: .4em .4em .2em .4em;
+    margin: 0 auto;
+  }
+}
+
+/* ----------COURTS---------- */
+
+.map_article_note {
+  margin: 2em auto;
+}
+
+#map-canvas {
+  width: 80%;
+  margin: 0 auto;
+  height: 32em;
+  @media (min-width: 50em) {
+    width: 100%;
+  }
+}
+
+.map_marker {
+  p {
+    margin: .5em 0 1em 0;
+  }
+  a {
+    padding: .3em .3em .1em .3em;
+  }
+}
+
+/* ----------ABOUT---------- */
+
+.about_article, {
+  padding: 6em 0;
+  p {
+    width: 80%;
+    margin: 1em auto 0 auto;
+  }
+  img {
+    width: 70%;
+  }
+  section {
+    margin-top: 3em;
+  }
+}
+
+/* ----------SIGN UP---------- */
+
+.signup_article, {
+  padding: 6em 0;
+}
+
+#create-account-form {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 50em) {
+    width: 60%;
+  }
+}
+
+.form_section input, .form_section select {
+  width: 100%;
+  height: 4em;
+  margin: .5em 0 2em 0;
+  padding: 1em;
+}
+
+#skill-level {
+  margin-bottom: 0;
+}
+
+.create_button, .confirm_message a {
+  width: 100%;
+  height: 2em;
+  padding-top: .2em;
+}
+
+.ranking_link {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.confirm_message {
+  width: 60%;
+  margin: 0 auto;
+  a {
+    padding: .5em 0 .2em 0;
+  }
+}
+
+.congrats_message {
+  width: 100%;
+  height: 2em;
+  margin: 0 auto;
+}
+
+.error_alert {
+  margin-top: 1em;
+}

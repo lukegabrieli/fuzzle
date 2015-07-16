@@ -1,0 +1,16 @@
+@font-face {
+   font-family: "Mensch";
+   src: url("../fonts/mensch.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Mensch Bold";
+   src: url("../fonts/mensch-bold.ttf") format("truetype");
+   font-weight: bold;
+   font-style: normal;
+}
+
+$primary-font: "Mensch", sans-serif;
+$primary-font-bold: "Mensch Bold", sans-serif;
