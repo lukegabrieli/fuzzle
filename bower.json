@@ -7,8 +7,20 @@
   ],
   "license": "MIT",
   "ignore": [
-    "*",
-    "!(public/sass/_header.scss)"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "db",
+    "lib",
+    "models",
+    "routes",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "public",
+    "!public/sass",
+    "public/sass",
+    "!public/sass/_header.scss"
   ],
   "main": "public/sass/_header.scss"
 }
